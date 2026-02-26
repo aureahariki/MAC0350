@@ -3,6 +3,12 @@
 <head>
     <title>Jupiterweb</title>
 </head>
+<style>
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
 <body>
     <div class="header">
       <a href="http://www.usp.br/">
@@ -31,25 +37,27 @@
           </select>
           <select name="Editais">
             <option value="">Editais</option>
-            <option value="PUB"><select name="PUB">
               <option value="">Programa Unificado de Bolsas (PUB)</option>
-              <option value="2024"><a href="https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2024&codm?codmnu=10872">Edital 2024/2025</a></option>
-              <option value="2025"><a href="https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2025&codm?codmnu=11502">Edital 2025/2026</a></option>
-            </select></option>
+                <select name="PUB">
+                  <option value="">Programa Unificado de Bolsas (PUB)</option>
+                  <option value="2024"><a href="https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2024&codm?codmnu=10872">Edital 2024/2025</a></option>
+                  <option value="2025"><a href="https://uspdigital.usp.br/juno/bnfArquivosPublicos.jsp?tiparq=1&anoprg=2025&codm?codmnu=11502">Edital 2025/2026</a></option>
+                </select>
             <option value="PEEG"><a href="http://www.prg.usp.br/?page_id=399?codmnu=6762">PEEG</a></option>
             <option value="PAP"><a href="https://prg.usp.br/programas-e-bolsas/?codmnu=10838">PAP</a></option>
           </select>
           <select name="FAQ">
             <option value="">FAQ</option>
-            <option value="matricula"><select name="matricula">
-              <option value="">Matrícula Interativa<select name="interativa">
+            <option value="matricula">Matrícula Interativa</option>
+              <select name="interativa">
+                <option value="">Matrícula Interativa</option>
                 <option value="faq"><a href="https://uspdigital.usp.br/jupiterweb/FAQ.jsp?codmnu=9326">FAQ</a></option>
                 <option value="info"><a href="https://uspdigital.usp.br/jupiterweb/grdMatriculainterativaInformacoes.jsp?codmnu=9327">Informações Gerais</a></option>
                 <option value=""><a href="https://uspdigital.usp.br/jupiterweb/graduacaoAjudaNovaMatricula?codmnu=8946">TUTORIAL - NOVA MATRÍCULA</a></option>
               </select></option>
-              <option value="videos"><a href="http://www.prg.usp.br/?p=20746&codmnu=6749">Jupiterweb em Vídeos</a></option>
-              <option value="Info"><a>Informações gerais sobre a Graduação</a></option>
-            </select></option>
+            <option value="videos"><a href="http://www.prg.usp.br/?p=20746&codmnu=6749">Jupiterweb em Vídeos</a></option>
+            <option value="Info"><a>Informações gerais sobre a Graduação</a></option>
+            </select>
           </select>
         </div>        
         <div id="menuRestrito">
@@ -65,7 +73,7 @@
           <input type="submit" placeholder="Entrar" name="entrar">
         </form>
         <div id="linha"></div>
-        
+
       </div>
     </div>
 </body>
